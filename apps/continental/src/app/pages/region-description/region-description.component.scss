@@ -1,0 +1,15 @@
+.region {
+    width: 300px;
+    margin: 0 auto;
+    h1 {
+        color: blue;
+    }
+}
+
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 2rem auto;
+}

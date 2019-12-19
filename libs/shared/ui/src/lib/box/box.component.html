@@ -1,0 +1,18 @@
+<div class="box" *ngIf="!isDescription;else descriptionTemplate">
+    <h1>{{ region.name }}</h1>
+    <p>Id: {{region.id}}</p>
+    <p>Código: {{region.code}}</p>
+    <p>Isocode: {{ region.iso2code }}</p>
+    <button (click)="sendBox(region.code)">GO</button>
+</div>
+
+<ng-template #descriptionTemplate>
+    <div class="box">
+        <h1>{{ region.name }}</h1>
+        <p>Id: {{ region.id }}</p>
+        <p>Capital: {{region.id}}</p>
+        <p>Latitude: {{region.code}}</p>
+        <p>Longitude: {{ region.iso2code }}</p>
+        <button (click)="sendBox(region.id)">GO</button>
+    </div>
+</ng-template>

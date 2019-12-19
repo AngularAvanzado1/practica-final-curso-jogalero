@@ -1,0 +1,8 @@
+<div *ngIf="( country$ | async )[0] as country " class="container">
+    <h1>{{ country.name }}</h1>
+    <p>Capital: {{ country.capitalCity }}</p>
+    <p>{{ country.longitude }}</p>
+    <p>{{ country.latitude }}</p>
+
+    <button (click)="goToRegion(country.region.id)">Ir a mi región: {{ country.region.value }}</button>
+</div>

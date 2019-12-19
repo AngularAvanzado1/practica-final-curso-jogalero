@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="form">
+        <input type="checkbox" #filterId (change)="checkValue()"> <span>Ver sólo las que tengan id</span>
+    </div>
+</div>
+
+<div class="container region_container">
+    <jg-ui-box (clickBox)="goToRegion($event)" [region]="region" *ngFor="let region of regions$ | async | filterid: isFilterInAction "></jg-ui-box>
+</div>
