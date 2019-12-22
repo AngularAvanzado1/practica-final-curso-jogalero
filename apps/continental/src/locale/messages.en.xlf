@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="12dcc8345684c2676d3dbebc19a0529a70b23fe4" datatype="html">
+        <source>Ver sólo las que tengan id</source>
+        <target>Only with id</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/region/region.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2ae797460f17fe72086256ec5e2da35ddc6e1614" datatype="html">
+        <source>Region</source>
+        <target>Region</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/region-description/region-description.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a98bb0c2b3e7016fec9932660557da4629a71bb4" datatype="html">
+        <source>id:</source>
+        <target>id:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/region-description/region-description.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8a633e9e5c85b3a6ccbcfd94dcaabca3291a0858" datatype="html">
+        <source>iso2Code:</source>
+        <target>iso2Code:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/region-description/region-description.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="20de7814985da87fe6648630d9e14b67324ddd2b" datatype="html">
+        <source>Nombre:</source>
+        <target>Name:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/region-description/region-description.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f281ac4c11fc58efb28e83b6c3ed87f3633ff2de" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ country.name }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/country/country.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c7185346120c2d7384c9060497bab0b20e4c0c1f" datatype="html">
+        <source>Capital:</source>
+        <target>Capital:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/country/country.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c7970b68750823752e934ed64e20d4e9186fd0ad" datatype="html">
+        <source>Ir a mi región: <x id="INTERPOLATION" equiv-text="{{ country.region.value }}"/></source>
+        <target>Go to my region:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/country/country.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

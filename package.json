@@ -27,7 +27,8 @@
         "update:check": "ng update",
         "workspace-schematic": "nx workspace-schematic",
         "dep-graph": "nx dep-graph",
-        "help": "nx help"
+        "help": "nx help",
+        "i18n:continental": "ng xi18n continental --output-path src/locale"
     },
     "private": true,
     "dependencies": {
@@ -40,7 +41,7 @@
         "@angular/platform-browser-dynamic": "^8.2.0",
         "@angular/pwa": "^0.803.21",
         "@angular/router": "^8.2.0",
-    "@angular/service-worker": "^8.2.0",
+        "@angular/service-worker": "^8.2.0",
         "@ngrx/effects": "8.5.0",
         "@ngrx/entity": "8.5.0",
         "@ngrx/router-store": "8.5.0",

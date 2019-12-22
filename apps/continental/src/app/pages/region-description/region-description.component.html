@@ -2,10 +2,10 @@
 
 <div class="container center" *ngIf="regionData$ | async as regionsData">
     <section class="region">
-        <h1>Region</h1>
-        <p>id: {{ regionsData[0]?.region?.id }}</p>
-        <p>iso2Code: {{ regionsData[0]?.region?.iso2code }}</p>
-        <p>Nombre: {{ regionsData[0]?.region?.value }}</p>
+        <h1 i18n>Region</h1>
+        <p><span i18n>id:</span>{{ regionsData[0]?.region?.id }}</p>
+        <p><span i18n>iso2Code:</span> {{ regionsData[0]?.region?.iso2code }}</p>
+        <p><span i18n>Nombre:</span> {{ regionsData[0]?.region?.value }}</p>
     </section>
     <div class="countries">
         <jg-ui-box (clickBox)="goToRegion($event)" [isDescription]="true" [region]="region" *ngFor="let region of regionsData"></jg-ui-box>
