@@ -16,6 +16,7 @@ import { environment } from '../environments/environment';
 import { StoreRouterConnectingModule, RouterState, routerReducer } from '@ngrx/router-store';
 import * as fromRegion from './store/region/region.reducer';
 import { RegionEffects } from './store/region/region.effects';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 const appRoutes: Routes = [
@@ -54,6 +55,7 @@ const appRoutes: Routes = [
     StoreRouterConnectingModule.forRoot({ routerState: RouterState.Minimal }),
     StoreModule.forFeature(fromRegion.regionFeatureKey, fromRegion.reducer),
     EffectsModule.forFeature([RegionEffects]),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
