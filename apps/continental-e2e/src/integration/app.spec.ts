@@ -1,13 +1,19 @@
-import { getGreeting } from '../support/app.po';
+import { inputText, visitHome, visitRegionDescription, RegionDescriptionTitle} from '../support/app.po';
 
 describe('continental', () => {
-  beforeEach(() => cy.visit('/'));
+  beforeEach(() => visitHome());
 
-  it('should display welcome message', () => {
-    // Custom command example, see `../support/commands.ts` file
-    cy.login('my-email@something.com', 'myPassword');
-
-    // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome to continental!');
+  it('should display an input span', () => {
+    inputText().contains('Ver sólo las que tengan id');
   });
+
+});
+
+describe('region description', () => {
+  beforeEach(() => visitRegionDescription());
+
+  it('should display an h1', () => {
+    RegionDescriptionTitle().contains('Datos báscisos de un continente');
+  });
+
 });

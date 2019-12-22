@@ -1,4 +1,6 @@
-<div class="container" *ngIf="regionData$ | async as regionsData">
+<h1 class="title">Datos báscisos de un continente</h1>
+
+<div class="container center" *ngIf="regionData$ | async as regionsData">
     <section class="region">
         <h1>Region</h1>
         <p>id: {{ regionsData[0]?.region?.id }}</p>
